@@ -30,14 +30,16 @@ To ensure your page uses no-quirks mode, include the following DOCTYPE at the be
   <body></body>
 </html>
 
-#### <head>
-Nested between the opening and closing <html> tags, we find the two children: <head> and <body>:
+## Content Language
 
-<!DOCTYPE html>
-<html lang="en-US">
-  <head>
-  </head>
-  <body>
-  </body>
-</html>
+The `lang` attribute in the `<html>` tag defines the main language of the document using a two- or three-letter ISO language code, optionally followed by a region code (e.g., `fr-CA` for Canadian French). This attribute helps screen readers, search engines, and translation services determine the document's language.
 
+### Usage of `lang` Attribute
+
+- **Global Language Declaration**: Place the `lang` attribute in the `<html>` tag to set the language for the entire document.
+- **Localized Language Exceptions**: Use the `lang` attribute within the body to specify parts of the document that differ from the main language.
+- **No Visual Impact**: The `lang` attribute is purely semantic, providing information to assistive technologies without affecting the document's appearance.
+
+### CSS Selectors and `lang`
+
+The `lang` attribute can also be utilized in CSS selectors. For instance, `<span lang="fr-fr">Ceci n'est pas une pipe.</span>` can be targeted using `[lang|="fr"]` or `:lang(fr)` in your CSS.
