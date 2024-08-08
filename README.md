@@ -1,3 +1,4 @@
+#Learning Html
 # Understanding Quirks Mode in Web Browsers
 
 In the early days of the web, pages were often created in two versions: one for Netscape Navigator and one for Microsoft Internet Explorer. When web standards were introduced by the W3C, browsers couldn't immediately adopt them without breaking most existing sites. To address this, browsers introduced two modes to differentiate between new standards-compliant sites and legacy sites.
